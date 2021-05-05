@@ -10,7 +10,7 @@ source:
   sha256: 0657db2b2e944b750154d3d9ddce821b0dce562c1892ed22323e62634c117861
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . -vv"
 
@@ -39,7 +39,7 @@ requirements:
     - jinja2 >=2.11
     - joblib >=1.0
     - lime
-    - matplotlib >3.3.1  # bug in 3.3.1
+    - matplotlib-base >3.3.1  # bug in 3.3.1
     # - mpich<3.4  # avoid 3.4.1 external_2 from conda-forge like the plague; stable 3.3.2 OK
     - natsort >=7.1
     - nc-time-axis
