@@ -10,7 +10,7 @@ source:
   sha256: 0657db2b2e944b750154d3d9ddce821b0dce562c1892ed22323e62634c117861
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: "{{ PYTHON }} -m pip install . -vv"
 
@@ -82,3 +82,7 @@ about:
 extra:
   recipe-maintainers:
     - zklaus
+    - valeriupredoi
+    - nielsdrost
+    - jvegasbsc
+    - bouweandela
