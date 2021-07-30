@@ -78,7 +78,7 @@ test:
   imports:
     - esmvaltool
   commands:
-    - pytest -n 2 --ignore="run_test.py" --ignore="tests/unit/test_docs.py"
+    - pytest -n 2 --ignore="run_test.py" --ignore="tests/unit/test_docs.py" -k "not ([diagnostic.R] or [diagnostic.jl] or [diagnostic.ncl] or test_r_lint)"
     - esmvaltool --help
     - cmorize_obs --help
     - nclcodestyle --help
